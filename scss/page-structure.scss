@@ -1,0 +1,115 @@
+@mixin flex($flxdir: unset, $just-cont: unset, $align-items: unset, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $flxdir;
+    flex-wrap: $wrap;
+    justify-content: $just-cont;
+    align-items: $align-items;
+}
+
+/* #region Rows */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row-wrap {
+    @include flex(row, unset, unset, wrap);
+}
+
+.flex-rowreverse-nowrap {
+    @include flex(row-reverse, unset, unset, nowrap);
+}
+
+.flex-rowreverse-wrap {
+    @include flex(row-reverse, unset, unset, wrap);
+}
+/* #endregion */
+
+/* #region Cols */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col-wrap {
+    @include flex(column, unset, unset, wrap);
+}
+
+.flex-colreverse-nowrap {
+    @include flex(column-reverse);
+}
+
+.flex-colreverse-wrap {
+    @include flex(column-reverse, unset, unset, wrap);
+}
+/* #endregion */
+
+/* #region Justify Content */
+.jc-flxStr {
+    @include flex(unset, flex-start, unset);
+}
+
+.jc-center {
+    @include flex(unset, center, unset);
+}
+
+.jc-flxEnd {
+    @include flex(unset, flex-end, unset);
+}
+
+.jc-spcEvn {
+    @include flex(unset, space-evenly, unset);
+}
+
+.jc-spcArd {
+    @include flex(unset, space-around, unset);
+}
+
+.jc-spcBtw {
+    @include flex(unset, space-between, unset);
+}
+/* #endregion */
+
+/* #region Align Items */
+.ai-flxStr {
+    @include flex(unset, unset, flex-start);
+}
+
+.ai-center {
+    @include flex(unset, unset, center);
+}
+
+.ai-flxEnd {
+    @include flex(unset, unset, flex-end);
+}
+/* #endregion */
+
+/* #region Other */
+.centralize {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.ac-center {
+    align-content: center;
+}
+
+.fit-cont {
+    width: fit-content;
+    padding: 7px;
+}
+
+.section {
+    margin: 15px;
+    padding: 10px;
+    width: 90%;
+}
+
+.subsection {
+    margin: 10px 5px 15px 5px;
+    padding: 5px;
+}
+/* #endregion */

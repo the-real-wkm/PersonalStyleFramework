@@ -1,0 +1,715 @@
+@import 'colors';
+
+@mixin body($bgc, $fgc) {
+    background-color: $bgc;
+    color: $fgc;
+}
+
+@mixin bgc($color) {
+    background-color: $color;
+}
+
+@mixin fgc($color) {
+    color: $color;
+}
+
+@mixin theme($bgc, $fgc, $bc) {
+    background-color: $bgc;
+    color: $fgc;
+    border: 1.5px solid $bc;
+}
+
+@mixin mc($bgc, $fgc, $bc) {
+    background-color: $bgc;
+    color: $fgc;
+    border: 3px solid $bc;
+}
+
+/*******
+Default
+*******/
+/* #region Default */
+
+/* #region Bodies */
+.def-brwn-body {
+    @include body($def-brwn, $light-def-blue);
+}
+
+.def-gold-body {
+    @include body($def-gold, $dark-def-brwn)
+}
+
+.def-blue-body {
+    @include body($def-blue, $light-def-gold);
+}
+/* #endregion */
+
+/* #region Background Colors */
+.bgc-def-brwn {
+    @include bgc($def-brwn);
+}
+
+.bgc-def-gold {
+    @include bgc($def-gold);
+}
+
+.bgc-def-blue {
+    @include bgc($def-blue);
+}
+
+.bgc-dark-def-brwn {
+    @include bgc($dark-def-brwn);
+}
+
+.bgc-dark-def-gold {
+    @include bgc($dark-def-gold);
+}
+
+.bgc-dark-def-blue {
+    @include bgc($dark-def-blue);
+}
+
+.bgc-light-def-brwn {
+    @include bgc($light-def-brwn);
+}
+
+.bgc-light-def-gold {
+    @include bgc($light-def-gold);
+}
+
+.bgc-light-def-blue {
+    @include bgc($light-def-blue);
+}
+/* #endregion */
+
+/* #region Foreground Colors */
+.fgc-def-brwn {
+    @include fgc($def-brwn);
+}
+
+.fgc-def-gold {
+    @include fgc($def-gold);
+}
+
+.fgc-def-blue {
+    @include fgc($def-blue);
+}
+
+.fgc-dark-def-brwn {
+    @include fgc($dark-def-brwn);
+}
+
+.fgc-dark-def-gold {
+    @include fgc($dark-def-gold);
+}
+
+.fgc-dark-def-blue {
+    @include fgc($dark-def-blue);
+}
+
+.fgc-light-def-brwn {
+    @include fgc($light-def-brwn);
+}
+
+.fgc-light-def-gold {
+    @include fgc($light-def-gold);
+}
+
+.fgc-light-def-blue {
+    @include fgc($light-def-blue);
+}
+/* #endregion */
+
+/* #region Themes */
+.def-theme1 {
+    @include theme($def-gold, $def-blue, $dark-def-brwn);
+}
+
+.def-theme2 {
+    @include theme($def-blue, $light-def-gold, $def-brwn);
+}
+/* #endregion */
+
+/* #region Monochromatics */
+.mc-def-gold {
+    @include mc($light-def-gold, $dark-def-gold, $def-gold);
+}
+
+.mc-def-brwn {
+    @include mc($def-brwn, $light-def-brwn, $dark-def-brwn);
+}
+
+.mc-def-blue {
+    @include mc($def-blue, $light-def-blue, $dark-def-blue);
+}
+/* #endregion */
+
+/* #endregion */
+
+/******
+Pastel
+*****/
+
+/* #region Pastel */
+
+/* #region Bodies */
+.past-pink-body {
+    @include body($past-pink, $dark-past-pink);
+}
+
+.past-prpl-body {
+    @include body($past-prpl, $dark-past-prpl);
+}
+
+.past-blue-body {
+    @include body($past-blue, $dark-past-blue);
+}
+
+.past-gren-body {
+    @include body($past-gren, $dark-past-gren);
+}
+
+.past-yllw-body {
+    @include body($past-yllw, $dark-past-yllw);
+}
+
+.past-orng-body {
+    @include body($past-orng, $dark-past-orng);
+}
+
+/* #endregion */
+
+/* #region Background Colors */
+.bgc-past-pink {
+    @include bgc($past-pink);
+}
+
+.bgc-past-prpl {
+    @include bgc($past-prpl);
+}
+
+.bgc-past-blue {
+    @include bgc($past-blue);
+}
+
+.bgc-past-gren {
+    @include bgc($past-gren);
+}
+
+.bgc-past-yllw {
+    @include bgc($past-yllw);
+}
+
+.bgc-past-orng {
+    @include bgc($past-orng);
+}
+
+.bgc-dark-past-pink {
+    @include bgc($dark-past-pink);
+}
+
+.bgc-dark-past-prpl {
+    @include bgc($dark-past-prpl);
+}
+
+.bgc-dark-past-blue {
+    @include bgc($dark-past-blue);
+}
+
+.bgc-dark-past-gren {
+    @include bgc($dark-past-gren);
+}
+
+.bgc-dark-past-yllw {
+    @include bgc($dark-past-yllw);
+}
+
+.bgc-dark-past-orng {
+    @include bgc($dark-past-orng);
+}
+
+.bgc-light-past-pink {
+    @include bgc($light-past-pink);
+}
+
+.bgc-light-past-prpl {
+    @include bgc($light-past-prpl);
+}
+
+.bgc-light-past-blue {
+    @include bgc($light-past-blue);
+}
+
+.bgc-light-past-gren {
+    @include bgc($light-past-gren);
+}
+
+.bgc-light-past-yllw {
+    @include bgc($light-past-yllw);
+}
+
+.bgc-light-past-orng {
+    @include bgc($light-past-orng);
+}
+/* #endregion */
+
+/* #region Foreground Colors */
+.fgc-past-pink {
+    @include fgc($past-pink);
+}
+
+.fgc-past-prpl {
+    @include fgc($past-prpl);
+}
+
+.fgc-past-blue {
+    @include fgc($past-blue);
+}
+
+.fgc-past-gren {
+    @include fgc($past-gren);
+}
+
+.fgc-past-yllw {
+    @include fgc($past-yllw);
+}
+
+.fgc-past-orng {
+    @include fgc($past-orng);
+}
+
+.fgc-dark-past-pink {
+    @include fgc($dark-past-pink);
+}
+
+.bgc-dark-past-prpl {
+    @include fgc($dark-past-prpl);
+}
+
+.fgc-dark-past-blue {
+    @include fgc($dark-past-blue);
+}
+
+.fgc-dark-past-gren {
+    @include fgc($dark-past-gren);
+}
+
+.fgc-dark-past-yllw {
+    @include fgc($dark-past-yllw);
+}
+
+.fgc-dark-past-orng {
+    @include fgc($dark-past-orng);
+}
+
+.fgc-light-past-pink {
+    @include fgc($light-past-pink);
+}
+
+.fgc-light-past-prpl {
+    @include fgc($light-past-prpl);
+}
+
+.fgc-light-past-blue {
+    @include fgc($light-past-blue);
+}
+
+.fgc-light-past-gren {
+    @include fgc($light-past-gren);
+}
+
+.fgc-light-past-yllw {
+    @include fgc($light-past-yllw);
+}
+
+.fgc-light-past-orng {
+    @include fgc($light-past-orng);
+}
+/* #endregion */
+
+/* #region Themes */
+.past-theme1 {
+    @include theme($past-orng, $dark-past-pink, $dark-past-yllw);
+}
+
+.past-theme2 {
+    @include theme($light-past-gren, $dark-past-blue, $past-prpl);
+}
+
+.past-theme3 {
+    @include theme($dark-past-blue, $light-past-prpl, $dark-past-prpl);
+}
+
+.past-theme4 {
+    @include theme($light-past-yllw, $dark-past-prpl, $past-orng);
+}
+/* #endregion */
+
+/* #region Monochromatics */
+.mc-past-pink {
+    @include mc($light-past-pink, $dark-past-pink, $past-pink);
+}
+
+.mc-past-prpl {
+    @include mc($light-past-prpl, $dark-past-prpl, $past-prpl);
+}
+
+.mc-past-blue {
+    @include mc($light-past-blue, $dark-past-blue, $past-blue);
+}
+
+.mc-past-gren {
+    @include mc($light-past-gren, $dark-past-gren, $past-gren);
+}
+
+.mc-past-yllw {
+    @include mc($light-past-yllw, $dark-past-yllw, $past-yllw);
+}
+
+.mc-past-orng {
+    @include mc($light-past-orng, $dark-past-orng, $past-orng);
+}
+/* #endregion */
+
+/* #endregion */
+
+/****
+Dark
+****/
+
+/* #region Dark */
+
+/* #region Bodies */
+.dark-blck-body {
+    @include body($dark-blck, $light-grey);
+}
+
+.dark-grey-body {
+    @include body($dark-grey, $whte);
+}
+
+.dark-red-body {
+    @include body($dark-red, $light-grey);
+}
+
+/* #endregion */
+
+/* #region Background Colors */
+.bgc-dark-blck {
+    @include bgc($dark-blck);
+}
+
+.bgc-dark-grey {
+    @include bgc($dark-grey);
+}
+
+.bgc-dark-red {
+    @include bgc($dark-red);
+}
+
+.bgc-mid-dark-blck {
+    @include bgc($mid-dark-blck);
+}
+
+.bgc-mid-dark-grey {
+    @include bgc($mid-grey);
+}
+
+.bgc-mid-dark-red {
+    @include bgc($mid-dark-red);
+}
+
+.bgc-light-dark-blck {
+    @include bgc($light-dark-blck);
+}
+
+.bgc-light-dark-grey {
+    @include bgc($light-dark-grey);
+}
+
+.bgc-light-dark-red {
+    @include bgc($light-dark-red);
+}
+/* #endregion */
+
+/* #region Foreground Colors */
+.fgc-dark-blck {
+    @include fgc($dark-blck);
+}
+
+.fgc-dark-grey {
+    @include fgc($dark-grey);
+}
+
+.fgc-dark-red {
+    @include fgc($dark-red);
+}
+
+.fgc-mid-dark-blck {
+    @include fgc($mid-dark-blck);
+}
+
+.fgc-mid-dark-grey {
+    @include fgc($mid-grey);
+}
+
+.fgc-mid-dark-red {
+    @include fgc($mid-dark-red);
+}
+
+.fgc-light-dark-blck {
+    @include fgc($light-dark-blck);
+}
+
+.fgc-light-dark-grey {
+    @include fgc($light-dark-grey);
+}
+
+.fgc-light-dark-red {
+    @include fgc($light-dark-red);
+}
+/* #endregion */
+
+/* #region Themes */
+.dark-theme1 {
+    @include theme($dark-grey, $light-dark-grey, $dark-blck);
+}
+
+.dark-theme2 {
+    @include theme($dark-blck, $light-dark-red, $dark-grey)
+}
+
+.dark-theme3 {
+    @include theme($dark-red, $light-dark-grey, $dark-blck);
+}
+/* #endregion */
+
+/* #region Monochromatics */
+.mc-dark-blck {
+    @include mc($mid-dark-blck, $light-dark-blck, $dark-blck);
+}
+
+.mc-dark-grey {
+    @include mc($mid-grey, $light-dark-grey, $dark-grey);
+}
+
+.mc-dark-red {
+    @include mc($mid-dark-red, $light-dark-red, $dark-red);
+}
+/* #endregion */
+
+/* #endregion */
+
+/*****
+Other
+*****/
+
+/* #region Other */
+
+/* #region Background Colors */
+.bgc-whte {
+    @include bgc($whte);
+}
+
+.bgc-light-grey {
+    @include bgc($light-grey);
+}
+
+.bgc-mid-grey {
+    @include bgc($mid-grey);
+}
+
+.bgc-blck {
+    @include bgc($blck);
+}
+
+.bgc-red {
+    @include bgc($red);
+}
+
+.bgc-gren {
+    @include bgc($gren);
+}
+
+.bgc-blue {
+    @include bgc($blue);
+}
+
+.bgc-light-red {
+    @include bgc($light-red);
+}
+
+.bgc-light-gren {
+    @include bgc($light-gren);
+}
+
+.bgc-light-blue {
+    @include bgc($light-blue);
+}
+
+.bgc-dark-red {
+    @include bgc($dark-red);
+}
+
+.bgc-dark-gren {
+    @include bgc($dark-gren);
+}
+
+.bgc-dark-blue {
+    @include bgc($dark-blue);
+}
+
+.bgc-yllw {
+    @include bgc($yllw);
+}
+
+.bgc-mgnt {
+    @include bgc($mgnt);
+}
+
+.bgc-cyan {
+    @include bgc($cyan);
+}
+
+.bgc-light-yllw {
+    @include bgc($light-yllw);
+}
+
+.bgc-light-mgnt {
+    @include bgc($light-mgnt);
+}
+
+.bgc-light-cyan {
+    @include bgc($light-cyan);
+}
+
+.bgc-dark-yllw {
+    @include bgc($dark-yllw);
+}
+
+.bgc-dark-mgnt {
+    @include bgc($dark-mgnt);
+}
+
+.bgc-dark-cyan {
+    @include bgc($dark-cyan);
+}
+/* #endregion */
+
+/* #region Foreground Colors */
+.fgc-whte {
+    @include fgc($whte);
+}
+
+.fgc-light-grey {
+    @include fgc($light-grey);
+}
+
+.fgc-mid-grey {
+    @include fgc($mid-grey);
+}
+
+.fgc-blck {
+    @include fgc($blck);
+}
+
+.fgc-red {
+    @include fgc($red);
+}
+
+.fgc-gren {
+    @include fgc($gren);
+}
+
+.fgc-blue {
+    @include fgc($blue);
+}
+
+.fgc-light-red {
+    @include fgc($light-red);
+}
+
+.fgc-light-gren {
+    @include fgc($light-gren);
+}
+
+.fgc-light-blue {
+    @include fgc($light-blue);
+}
+
+.fgc-dark-red {
+    @include fgc($dark-red);
+}
+
+.fgc-dark-gren {
+    @include fgc($dark-gren);
+}
+
+.fgc-dark-blue {
+    @include fgc($dark-blue);
+}
+
+.fgc-yllw {
+    @include fgc($yllw);
+}
+
+.fgc-mgnt {
+    @include fgc($mgnt);
+}
+
+.fgc-cyan {
+    @include fgc($cyan);
+}
+
+.fgc-light-yllw {
+    @include fgc($light-yllw);
+}
+
+.fgc-light-mgnt {
+    @include fgc($light-mgnt);
+}
+
+.fgc-light-cyan {
+    @include fgc($light-cyan);
+}
+
+.fgc-dark-yllw {
+    @include fgc($dark-yllw);
+}
+
+.fgc-dark-mgnt {
+    @include fgc($dark-mgnt);
+}
+
+.fgc-dark-cyan {
+    @include fgc($dark-cyan);
+}
+/* #endregion */
+
+/* #region Monochromatics */
+.mc-red {
+    @include mc($light-red, $dark-red, $red);
+}
+
+.mc-gren {
+    @include mc($light-gren, $dark-gren, $gren);
+}
+
+.mc-blue {
+    @include mc($light-blue, $dark-blue, $blue);
+}
+
+.mc-yllw {
+    @include mc($light-yllw, $dark-yllw, $yllw);
+}
+
+.mc-mgnt {
+    @include mc($light-mgnt, $dark-mgnt, $mgnt);
+}
+
+.mc-cyan {
+    @include mc($light-cyan, $dark-cyan, $cyan);
+}
+/* #endregion */
+
+/* #endregion */

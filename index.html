@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Web</title>
+
+    <link href='scss/style.css' rel='stylesheet' />
+</head>
+
+<body class='def-blue-body centralize'>
+    <div class='hNav-dark-def-gold'>
+        <div class='def-blue-navItem1'>
+            <a href='index.html'>Home</a>
+        </div>
+
+        <div class='def-blue-navItem1'>
+            <a href='page1.html'>Intro</a>
+        </div>
+
+        <div class='def-blue-navItem1'>
+            <a href='page2.html'>Indepth</a>
+        </div>
+    </div>
+
+    <div class='section'>
+        <div class='subsection'>
+            <h1>The Reset</h1>
+
+            <p>
+                Below, you can see the Meyer's Reset used in Bootsnakes and what things it resets.
+            </p>
+
+            <div class='code-cont'>
+                <pre>
+                    <code>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+                    </code>
+                </pre>
+            </div>
+
+        </div>
+
+        <div class='subsection'>
+            <h1>General Changes/Adjustments</h1>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte' >
+                <h2 class='board-title'>html</h2>
+
+                <p class='board-body'>
+                    <div class='code-cont'>
+                        <pre>
+                            <code>
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </p>
+            </div>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte'>
+                <h2 class='board-title'>body</h2>
+
+                <p class=board-body>
+                    <div class='code-cont'>
+                        <pre>
+                            <code>
+body {
+    width: 100%;
+    margin: 25px;
+    font-size: $text;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </p>
+            </div>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte'>
+                <h2 class='board-title'>p</h2>
+
+                <p class=board-body>
+                    <div class='code-cont'>
+                        <pre>
+                            <code>
+p {
+    padding: 5px;
+    margin: 10px 15px 20px 15px;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </p>
+            </div>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte'>
+                <h2 class='board-title'>Headers</h2>
+
+                <div class='h-divider'></div>
+
+                <div class='board-body'>
+                    <h1>Heading 1</h1>
+                    <p>
+                        <div class='code-cont'>
+                            <pre>
+                                <code>
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $h1;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </p>
+
+                    <div class='h-divider'></div>
+
+                    <h2>Heading 2</h2>
+                    <p>
+                        <div class='code-cont'>
+                            <pre>
+                                <code>
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $h2;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </p>
+
+                    <div class='h-divider'></div>
+
+                    <h3>Heading 3</h3>
+                    <p>
+                        <div class='code-cont'>
+                            <pre>
+                                <code>
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $h3;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </p>
+
+                    <div class="h-divider"></div>
+
+                    <h4>Heading 4</h4>
+                    <p>
+                        <div class='code-cont'>
+                            <pre>
+                                <code>
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: $h1;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </p>
+
+                    <div class='h-divider'></div>
+
+                    <h5>Heading 5</h5>
+                    <p>
+                        <div class='code-cont'>
+                            <pre>
+                                <code>
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: $h2;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </p>
+
+                    <div class='h-divider'></div>
+
+                    <h6>Heading 6</h6>
+
+                    <p>
+                        <div class='code-cont'>
+                            <pre>
+                                <code>
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: $h3;
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte'>
+                <h2 class='board-title'>table</h2>
+
+                <p class='board-body'>
+                    <div class='code-cont'>
+                        <pre>
+                            <code>
+table {
+    margin: 10px;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </p>
+            </div>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte'>
+                <h2 class='board-title'>ul</h2>
+
+                <p class='board-body'>
+                    <div class='code-cont'>
+                        <pre>
+                            <code>
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 3px;
+    margin: 10px;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </p>
+            </div>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte'>
+                <h2 class='board-title'>ol</h2>
+
+                <p class='board-body'>
+                    <div class='code-cont'>
+                        <pre>
+                            <code>
+ol {
+    list-style-type: upper-latin;
+    list-style-position: inside;
+    padding: 3px;
+    margin: 10px;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </p>
+            </div>
+
+            <div class='board ai-center bgc-dark-def-brwn fgc-whte'>
+                <h2 class='board-title'>li</h2>
+
+                <p class='board-body'>
+                    <div class='code-cont'>
+                        <pre>
+                            <code>
+li {
+    margin: 2px;
+    padding: 3px;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>

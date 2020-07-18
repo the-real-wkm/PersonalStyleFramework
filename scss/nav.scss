@@ -1,0 +1,692 @@
+@import 'colors';
+
+/*********************
+    Basic Items
+*********************/
+
+@mixin hNav($bgc) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $bgc;
+}
+
+@mixin vNav($bgc) {
+    height: 100%;
+    max-width: 300px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $bgc;
+}
+
+@mixin navItem($bgc1, $bgc2, $fgc1, $fgc2, $fgc3) {
+    padding: 5px;
+    margin: 5px;
+    transition: background-color 0.4s ease-out;
+    background-color: $bgc1;
+
+    a {
+        text-decoration: none;
+        color: $fgc1;
+        
+        &:visited {
+            color: $fgc2;
+        }
+    }
+
+    &:hover {
+        background-color: $bgc2;
+        cursor: pointer;
+
+        a {
+            color: $fgc3;
+
+            &:visited {
+                color: $fgc3;
+            }
+        }
+    }
+}
+
+/***************
+    Default
+***************/
+
+/* #region Default */
+
+/* #region hNavs */
+.hNav-def-brwn {
+    @include hNav($def-brwn);
+}
+
+.hNav-def-gold {
+    @include hNav($def-gold);
+}
+
+.hNav-def-blue {
+    @include hNav($def-blue);
+}
+
+.hNav-light-def-brwn {
+    @include hNav($light-def-brwn);
+}
+
+.hNav-light-def-gold {
+    @include hNav($light-def-gold);
+}
+
+.hNav-light-def-blue {
+    @include hNav($light-def-blue);
+}
+
+.hNav-dark-def-brwn {
+    @include hNav($dark-def-brwn);
+}
+
+.hNav-dark-def-gold {
+    @include hNav($dark-def-gold);
+}
+
+.hNav-dark-def-blue {
+    @include hNav($dark-def-blue);
+}
+/* #endregion */
+
+/* #region vNavs */
+.vNav-def-brwn {
+    @include vNav($def-brwn);
+}
+
+.vNav-def-gold {
+    @include vNav($def-gold);
+}
+
+.vNav-def-blue {
+    @include vNav($def-blue);
+}
+
+.vNav-light-def-brwn {
+    @include vNav($light-def-brwn);
+}
+
+.vNav-light-def-gold {
+    @include vNav($light-def-gold);
+}
+
+.vNav-light-def-blue {
+    @include vNav($light-def-blue);
+}
+
+.vNav-dark-def-brwn {
+    @include vNav($dark-def-brwn);
+}
+
+.vNav-dark-def-gold {
+    @include vNav($dark-def-gold);
+}
+
+.vNav-dark-def-blue {
+    @include vNav($dark-def-blue);
+}
+/* #endregion */
+
+/* #region navItems */
+.def-brwn-navItem1 {
+    @include navItem($light-def-brwn, $dark-def-brwn, $dark-def-gold, $def-brwn, $def-gold);
+}
+
+.def-brwn-navItem2 {
+    @include navItem($def-brwn, $light-def-brwn, $light-def-gold, $dark-def-brwn, $def-gold);
+}
+
+.def-gold-navItem1 {
+    @include navItem($dark-def-gold, $light-def-gold, $def-gold, $def-brwn, $def-blue);
+}
+
+.def-gold-navItem2 {
+    @include navItem($def-gold, $light-def-gold, $dark-def-blue, $def-blue, $dark-def-blue);
+}
+
+.def-blue-navItem1 {
+    @include navItem($def-blue, $dark-def-blue, $light-def-gold, $light-def-gold, $light-def-brwn);
+}
+
+.def-blue-navItem2 {
+    @include navItem($def-blue, $light-def-blue, $light-def-gold, $light-def-brwn, $dark-def-brwn);
+}
+/* #endregion */
+
+/* #endregion */
+
+/***************
+    Pastel
+***************/
+
+/* #region Pastel */
+
+/* #region hNavs */
+.hNav-past-pink {
+    @include hNav($past-pink);
+}
+
+.hNav-past-prpl {
+    @include hNav($past-prpl);
+}
+
+.hNav-past-blue {
+    @include hNav($past-blue);
+}
+
+.hNav-past-gren {
+    @include hNav($past-gren);
+}
+
+.hNav-past-yllw {
+    @include hNav($past-yllw);
+}
+
+.hNav-past-orng {
+    @include hNav($past-orng);
+}
+
+.hNav-dark-past-pink {
+    @include hNav($dark-past-pink);
+}
+
+.hNav-dark-past-prpl {
+    @include hNav($dark-past-prpl);
+}
+
+.hNav-dark-past-blue {
+    @include hNav($dark-past-blue);
+}
+
+.hNav-dark-past-gren {
+    @include hNav($dark-past-gren);
+}
+
+.hNav-dark-past-yllw {
+    @include hNav($dark-past-yllw);
+}
+
+.hNav-dark-past-orng {
+    @include hNav($dark-past-orng);
+}
+
+.hNav-light-past-pink {
+    @include hNav($light-past-pink);
+}
+
+.hNav-light-past-prpl {
+    @include hNav($light-past-prpl);
+}
+
+.hNav-light-past-blue {
+    @include hNav($light-past-blue);
+}
+
+.hNav-light-past-gren {
+    @include hNav($light-past-gren);
+}
+
+.hNav-light-past-yllw {
+    @include hNav($light-past-yllw);
+}
+
+.hNav-light-past-orng {
+    @include hNav($light-past-orng);
+}
+/* #endregion */
+
+/* #region vNavs */
+.vNav-past-pink {
+    @include vNav($past-pink);
+}
+
+.vNav-past-prpl {
+    @include vNav($past-prpl);
+}
+
+.vNav-past-blue {
+    @include vNav($past-blue);
+}
+
+.vNav-past-gren {
+    @include vNav($past-gren);
+}
+
+.vNav-past-yllw {
+    @include vNav($past-yllw);
+}
+
+.vNav-past-orng {
+    @include vNav($past-orng);
+}
+
+.vNav-dark-past-pink {
+    @include vNav($dark-past-pink);
+}
+
+.vNav-dark-past-prpl {
+    @include vNav($dark-past-prpl);
+}
+
+.vNav-dark-past-blue {
+    @include vNav($dark-past-blue);
+}
+
+.vNav-dark-past-gren {
+    @include vNav($dark-past-gren);
+}
+
+.vNav-dark-past-yllw {
+    @include vNav($dark-past-yllw);
+}
+
+.vNav-dark-past-orng {
+    @include vNav($dark-past-orng);
+}
+
+.vNav-light-past-pink {
+    @include vNav($light-past-pink);
+}
+
+.vNav-light-past-prpl {
+    @include vNav($light-past-prpl);
+}
+
+.vNav-light-past-blue {
+    @include vNav($light-past-blue);
+}
+
+.vNav-light-past-gren {
+    @include vNav($light-past-gren);
+}
+
+.vNav-light-past-yllw {
+    @include vNav($light-past-yllw);
+}
+
+.vNav-light-past-orng {
+    @include vNav($light-past-orng);
+}
+/* #endregion */
+
+/* #region navItems */
+.past-pink-navItem {
+    @include navItem($light-past-pink, $past-pink, $dark-past-pink, $dark-past-pink, $dark-past-pink);
+}
+
+.past-prpl-navItem {
+    @include navItem($light-past-prpl, $past-prpl, $dark-past-prpl, $dark-past-prpl, $dark-past-prpl);
+}
+
+.past-blue-navItem {
+    @include navItem($light-past-blue, $past-blue, $dark-past-blue, $dark-past-blue, $dark-past-blue);
+}
+
+.past-gren-navItem {
+    @include navItem($light-past-gren, $past-gren, $dark-past-gren, $dark-past-gren, $dark-past-gren);
+}
+
+.past-yllw-navItem {
+    @include navItem($light-past-yllw, $past-yllw, $dark-past-yllw, $dark-past-yllw, $dark-past-yllw);
+}
+
+.past-orng-navItem {
+    @include navItem($light-past-orng, $past-orng, $dark-past-orng, $dark-past-orng, $dark-past-orng);
+}
+
+.past-navItem1 {
+    @include navItem($past-pink, $past-prpl, $dark-past-prpl, $dark-past-prpl, $dark-past-blue);
+}
+
+.past-navItem2 {
+    @include navItem($past-yllw, $light-past-gren, $dark-past-pink, $dark-past-prpl, $dark-past-gren);
+}
+
+.past-navItem3 {
+    @include navItem($dark-past-blue, $dark-past-orng, $light-past-blue, $light-past-prpl, $light-past-orng);
+}
+
+.past-navItem4 {
+    @include navItem($light-past-pink, $light-past-gren, $past-pink, $past-prpl, $past-gren);
+}
+/* #endregion */
+
+/* #endregion */
+
+/************* 
+    Dark
+*************/
+
+/* #region Dark */
+
+/* #region hNavs */
+.hNav-dark-blck {
+    @include hNav($dark-blck);
+}
+
+.hNav-dark-grey {
+    @include hNav($dark-grey);
+}
+
+.hNav-mid-dark-blck {
+    @include hNav($mid-dark-blck);
+}
+
+.hNav-mid-dark-grey {
+    @include hNav($mid-grey);
+}
+
+.hNav-mid-dark-red {
+    @include hNav($mid-dark-red);
+}
+
+.hNav-light-dark-blck {
+    @include hNav($light-dark-blck);
+}
+
+.hNav-light-dark-grey {
+    @include hNav($light-dark-grey);
+}
+
+.hNav-light-dark-red {
+    @include hNav($light-dark-red);
+}
+/* #endregion */
+
+/* #region vNavs */
+.vNav-dark-blck {
+    @include vNav($dark-blck);
+}
+
+.vNav-dark-grey {
+    @include vNav($dark-grey);
+}
+
+.vNav-mid-dark-blck {
+    @include vNav($mid-dark-blck);
+}
+
+.vNav-mid-dark-grey {
+    @include vNav($mid-grey);
+}
+
+.vNav-mid-dark-red {
+    @include vNav($mid-dark-red);
+}
+
+.vNav-light-dark-blck {
+    @include vNav($light-dark-blck);
+}
+
+.vNav-light-dark-grey {
+    @include vNav($light-dark-grey);
+}
+
+.vNav-light-dark-red {
+    @include vNav($light-dark-red);
+}
+/* #endregion */
+
+/* #region navItems */
+.dark-blck-navItem {
+    @include navItem($dark-blck, $mid-dark-blck, $light-dark-blck, $light-dark-blck, $light-dark-blck);
+}
+
+.dark-grey-navItem {
+    @include navItem($dark-grey, $mid-grey, $light-dark-grey, $light-dark-grey, $whte);
+}
+
+.dark-red-navItem {
+    @include navItem($dark-red, $mid-dark-red, $light-dark-red, $light-dark-red, $whte);
+}
+
+.dark-navItem1 {
+    @include navItem($dark-blck, $dark-grey, $light-dark-red, $light-dark-grey, $whte);
+}
+
+.dark-navItem2 {
+    @include navItem($dark-grey, $dark-blck, $mid-dark-red, $light-dark-red, $mid-dark-red);
+}
+
+.dark-navItem3 {
+    @include navItem($mid-dark-red, $dark-red, $dark-blck, $dark-blck, $light-dark-red);
+}
+/* #endregion */
+
+/* #endregion */
+
+/**************
+    Other
+**************/
+
+/* #region Other*/
+
+/* #region hNavs */
+.hNav-whte {
+    @include hNav($whte);
+}
+
+.hNav-light-grey {
+    @include hNav($light-grey);
+}
+
+.hNav-mid-grey {
+    @include hNav($mid-grey);
+}
+
+.hNav-blck {
+    @include hNav($blck);
+}
+
+.hNav-red {
+    @include hNav($red);
+}
+
+.hNav-gren {
+    @include hNav($gren);
+}
+
+.hNav-blue {
+    @include hNav($blue);
+}
+
+.hNav-light-red {
+    @include hNav($light-red);
+}
+
+.hNav-light-gren {
+    @include hNav($light-gren);
+}
+
+.hNav-light-blue {
+    @include hNav($light-blue);
+}
+
+.hNav-dark-red {
+    @include hNav($dark-red);
+}
+
+.hNav-dark-gren {
+    @include hNav($dark-gren);
+}
+
+.hNav-dark-blue {
+    @include hNav($dark-blue);
+}
+
+.hNav-yllw {
+    @include hNav($yllw);
+}
+
+.hNav-mgnt {
+    @include hNav($mgnt);
+}
+
+.hNav-cyan {
+    @include hNav($cyan);
+}
+
+.hNav-light-yllw {
+    @include hNav($light-yllw);
+}
+
+.hNav-light-mgnt {
+    @include hNav($light-mgnt);
+}
+
+.hNav-light-cyan {
+    @include hNav($light-cyan);
+}
+
+.hNav-dark-yllw {
+    @include hNav($dark-yllw);
+}
+
+.hNav-dark-mgnt {
+    @include hNav($dark-mgnt);
+}
+
+.hNav-dark-cyan {
+    @include hNav($dark-cyan);
+}
+/* #endregion */
+
+/* #region vNavs */
+.vNav-whte {
+    @include vNav($whte);
+}
+
+.vNav-light-grey {
+    @include vNav($light-grey);
+}
+
+.vNav-mid-grey {
+    @include vNav($mid-grey);
+}
+
+.vNav-blck {
+    @include vNav($blck);
+}
+
+.vNav-red {
+    @include vNav($red);
+}
+
+.vNav-gren {
+    @include vNav($gren);
+}
+
+.vNav-blue {
+    @include vNav($blue);
+}
+
+.vNav-light-red {
+    @include vNav($light-red);
+}
+
+.vNav-light-gren {
+    @include vNav($light-gren);
+}
+
+.vNav-light-blue {
+    @include vNav($light-blue);
+}
+
+.vNav-dark-red {
+    @include vNav($dark-red);
+}
+
+.vNav-dark-gren {
+    @include vNav($dark-gren);
+}
+
+.vNav-dark-blue {
+    @include vNav($dark-blue);
+}
+
+.vNav-yllw {
+    @include vNav($yllw);
+}
+
+.vNav-mgnt {
+    @include vNav($mgnt);
+}
+
+.vNav-cyan {
+    @include vNav($cyan);
+}
+
+.vNav-light-yllw {
+    @include vNav($light-yllw);
+}
+
+.vNav-light-mgnt {
+    @include vNav($light-mgnt);
+}
+
+.vNav-light-cyan {
+    @include vNav($light-cyan);
+}
+
+.vNav-dark-yllw {
+    @include vNav($dark-yllw);
+}
+
+.vNav-dark-mgnt {
+    @include vNav($dark-mgnt);
+}
+
+.vNav-dark-cyan {
+    @include vNav($dark-cyan);
+}
+/* #endregion */
+
+/* #region navItems */
+.whte-navItem {
+    @include navItem($whte, $light-grey, $blck, $blck, $blck);
+}
+
+.grey-navItem {
+    @include navItem($mid-grey, $dark-grey, $blck, $blck, $whte);
+}
+
+.blck-navItem {
+    @include navItem($blck, $dark-grey, $whte, $whte, $whte);
+}
+
+.red-navItem {
+    @include navItem($light-red, $dark-red, $red, $red, $red);
+}
+
+.gren-navItem {
+    @include navItem($light-gren, $dark-gren, $gren, $gren, $gren);
+}
+
+.blue-navItem {
+    @include navItem($light-blue, $dark-blue, $blue, $blue, $blue);
+}
+
+.yllw-navItem {
+    @include navItem($light-yllw, $dark-yllw, $yllw, $yllw, $yllw);
+}
+
+.mgnt-navItem {
+    @include navItem($light-mgnt, $dark-mgnt, $mgnt, $mgnt, $mgnt);
+}
+
+.cyan-navItem {
+    @include navItem($light-cyan, $dark-cyan, $cyan, $cyan, $cyan);
+}
+/* #endregion */
+
+/* #endregion */

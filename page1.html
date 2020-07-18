@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Web</title>
+
+    <link href='scss/style.css' rel='stylesheet' />
+</head>
+
+<body class='past-gren-body ac-center'>
+    <div class='hNav-past-blue'>
+        <div class='past-navItem3'>
+            <a href='index.html'>Home</a>
+        </div>
+
+        <div class='past-navItem3'>
+            <a href='page1.html'>Intro</a>
+        </div>
+
+        <div class='past-navItem3'>
+            <a href='page2.html'>Indepth</a>
+        </div>
+    </div>
+
+    <div class='section'>
+        <div class='subsection'>
+            <h1>Colors</h1>
+
+            <div class='board past-theme2'>
+                <table>
+                    <tr class='bgc-whte fgc-blck sm-blck-border'>
+                        <th class='sm-blck-border'>Color Name</th>
+                        <th class='sm-blck-border'>Hex Code</th>
+                        <th class='sm-blck-border'>SCSS Label</th>
+                    </tr>
+
+                    <tr>
+                        <td><h2>Other (B&W)</h2></td>
+                        <td colspan='2'></td>
+                    </tr>
+
+                    <tr class='bgc-whte fgc-blck sm-blck-border'>
+                        <td>White</td>
+                        <td>#FFFFFF</td>
+                        <td>$whte</td>
+                    </tr>
+
+                    <tr class='bgc-light-grey fgc-blck sm-blck-border'>
+                        <td>Light Grey</td>
+                        <td>#CBCBCB</td>
+                        <td>$light-grey</td>
+                    </tr>
+
+                    <tr class='bgc-mid-grey fgc-blck sm-blck-border'>
+                        <td>Mid Grey</td>
+                        <td>#808080</td>
+                        <td>$mid-grey</td>
+                    </tr>
+
+                    <tr class='bgc-dark-grey fgc-whte sm-blck-border'>
+                        <td>Dark Grey</td>
+                        <td>#404040</td>
+                        <td>$dark-grey</td>
+                    </tr>
+
+                    <tr class='bgc-blck fgc-whte sm-blck-border'>
+                        <td>Black</td>
+                        <td>#000000</td>
+                        <td>$blck</td>
+                    </tr>
+
+                    <tr>
+                        <td><h2>Other (CLR)</h2></td>
+                        <td colspan='2'></td>
+                    </tr>
+
+
+                    <tr class='bgc-light-mgnt fgc-blck sm-blck-border'>
+                        <td>Light Magenta</td>
+                        <td>#FFCCFF</td>
+                        <td>$light-mgnt</td>
+                    </tr>
+
+                    <tr class='bgc-mgnt fgc-blck sm-blck-border'>
+                        <td>Magenta</td>
+                        <td>#FF00FF</td>
+                        <td>$mgnt</td>
+                    </tr>
+
+                    <tr class='bgc-dark-mgnt fgc-whte sm-blck-border'>
+                        <td>Dark Magenta</td>
+                        <td>#670067</td>
+                        <td>$dark-mgnt</td>
+                    </tr>
+                    
+                    <tr class='bgc-dark-red fgc-whte sm-blck-border'>
+                        <td>Dark Red</td>
+                        <td>#560000</td>
+                        <td>$dark-red</td>
+                    </tr>
+
+                    <tr class='bgc-red fgc-whte sm-blck-border'>
+                        <td>Red</td>
+                        <td>#FF0000</td>
+                        <td>$red</td>
+                    </tr>
+
+                    <tr class='bgc-light-red fgc-blck sm-blck-border'>
+                        <td>Light Red</td>
+                        <td>#FFBBCC</td>
+                        <td>$light-red</td>
+                    </tr>    
+
+                    <tr class='bgc-light-yllw fgc-blck sm-blck-border'>
+                        <td>Light Yellow</td>
+                        <td>#FFFFCC</td>
+                        <td>$light-yllw</td>
+                    </tr>
+
+                    <tr class='bgc-yllw fgc-blck sm-blck-border'>
+                        <td>Yellow</td>
+                        <td>#FFFF00</td>
+                        <td>$yllw</td>
+                    </tr>
+
+                    <tr class='bgc-dark-yllw fgc-whte sm-blck-border'>
+                        <td>Dark Yellow</td>
+                        <td>#766700</td>
+                        <td>$dark-yllw</td>
+                    </tr>
+
+                    <tr class='bgc-dark-gren fgc-whte sm-blck-border'>
+                        <td>Dark Green</td>
+                        <td>#006700</td>
+                        <td>$dark-gren</td>
+                    </tr>
+                    
+                    <tr class='bgc-gren fgc-blck sm-blck-border'>
+                        <td>Green</td>
+                        <td>#00FF00</td>
+                        <td>$gren</td>
+                    </tr>
+
+                    <tr class='bgc-light-gren fgc-blck sm-blck-border'>
+                        <td>Light Green</td>
+                        <td>#CCFFBB</td>
+                        <td>$light-gren</td>
+                    </tr>
+
+                    <tr class='bgc-light-blue fgc-blck sm-blck-border'>
+                        <td>Light Blue</td>
+                        <td>#BBCCFF</td>
+                        <td>$light-blue</td>
+                    </tr>
+
+                    <tr class='bgc-blue fgc-whte sm-blck-border'>
+                        <td>Blue</td>
+                        <td>#0000FF</td>
+                        <td>$blue</td>
+                    </tr>
+
+                    <tr class='bgc-dark-blue fgc-whte sm-blck-border'>
+                        <td>Dark Blue</td>
+                        <td>#000067</td>
+                        <td>$dark-blue</td>
+                    </tr>
+
+                    <tr class='bgc-dark-cyan fgc-whte sm-blck-border'>
+                        <td>Dark Cyan</td>
+                        <td>#006767</td>
+                        <td>$dark-cyan</td>
+                    </tr>
+                    
+                    <tr class='bgc-cyan fgc-blck sm-blck-border'>
+                        <td>Cyan</td>
+                        <td>#00FFFF</td>
+                        <td>$cyan</td>
+                    </tr>
+
+                    <tr class='bgc-light-cyan fgc-blck sm-blck-border'>
+                        <td>Light Cyan</td>
+                        <td>#CCFFFF</td>
+                        <td>$light-cyan</td>
+                    </tr>
+
+                    <tr>
+                        <td><h2>Default</h2></td>
+                        <td colspan='2'></td>
+                    </tr>
+
+                    <tr class='bgc-dark-def-gold fgc-whte sm-blck-border'>
+                        <td>Dark Default Gold</td>
+                        <td>#A07501</td>
+                        <td>$dark-def-gold</td>
+                    </tr>
+
+                    <tr class='bgc-def-gold fgc-blck sm-blck-border'>
+                        <td>Default Gold</td>
+                        <td>#D6AB47</td>
+                        <td>$def-gold</td>
+                    </tr>
+
+                    <tr class='bgc-light-def-gold fgc-blck sm-blck-border'>
+                        <td>Light Default Gold</td>
+                        <td>#FFDFAA</td>
+                        <td>$light-def-gold</td>
+                    </tr>
+
+                    <tr class='bgc-light-def-brwn fgc-blck sm-blck-border'>
+                        <td>Light Default Brown</td>
+                        <td>#D6A591</td>
+                        <td>$light-def-brwn</td>
+                    </tr>
+
+                    <tr class='bgc-def-brwn fgc-whte sm-blck-border'>
+                        <td>Default Brown</td>
+                        <td>#52342A</td>
+                        <td>$def-brwn</td>
+                    </tr>
+
+
+                    <tr class='bgc-dark-def-brwn fgc-whte sm-blck-border'>
+                        <td>Dark Default Brown</td>
+                        <td>#2C0E04</td>
+                        <td>$dark-def-brwn</td>
+                    </tr>
+
+                    <tr class='bgc-dark-def-blue fgc-whte sm-blck-border'>
+                        <td>Dark Default Blue</td>
+                        <td>#111525</td>
+                        <td>$dark-def-blue</td>
+                    </tr>
+
+                    <tr class='bgc-def-blue fgc-whte sm-blck-border'>
+                        <td>Default Blue</td>
+                        <td>#1A2E5D</td>
+                        <td>$def-blue</td>
+                    </tr>
+
+                    <tr class='bgc-light-def-blue fgc-whte sm-blck-border'>
+                        <td>Light Default Blue</td>
+                        <td>#6666CC</td>
+                        <td>$light-def-blue</td>
+                    </tr>
+
+                    <tr>
+                        <td><h2>Pastel</h2></td>
+                        <td colspan='2'></td>
+                    </tr>
+
+                    <tr class='bgc-past-pink fgc-blck sm-blck-border'>
+                        <td>Pastel Pink</td>
+                        <td>#FFC0E8</td>
+                        <td>$past-pink</td>
+                    </tr>
+
+                    <tr class='bgc-past-prpl fgc-blck sm-blck-border'>
+                        <td>Pastel Purple</td>
+                        <td>#DFA6FF</td>
+                        <td>$past-prpl</td>
+                    </tr>
+
+                    <tr class='bgc-past-blue fgc-blck sm-blck-border'>
+                        <td>Pastel Blue</td>
+                        <td>#B0C3FF</td>
+                        <td>$past-blue</td>
+                    </tr>
+
+                    <tr class='bgc-past-gren fgc-blck sm-blck-border'>
+                        <td>Pastel Green</td>
+                        <td>#C9FFD3</td>
+                        <td>$past-gren</td>
+                    </tr>
+
+                    <tr class='bgc-past-yllw fgc-blck sm-blck-border'>
+                        <td>Pastel Yellow</td>
+                        <td>#FCFCB8</td>
+                        <td>$past-yllw</td>
+                    </tr>
+
+                    <tr class='bgc-past-orng fgc-blck sm-blck-border'>
+                        <td>Pastel Orange</td>
+                        <td>#E8C8A6</td>
+                        <td>$past-orng</td>
+                    </tr>
+
+                    <tr class='bgc-light-past-pink fgc-blck sm-blck-border'>
+                        <td>Light Pastel Pink</td>
+                        <td>#FFDDEE</td>
+                        <td>$light-past-pink</td>
+                    </tr>
+
+                    <tr class='bgc-light-past-prpl fgc-blck sm-blck-border'>
+                        <td>Light Pastel Purple</td>
+                        <td>#EECCFF</td>
+                        <td>$light-past-prpl</td>
+                    </tr>
+
+                    <tr class='bgc-light-past-blue fgc-blck sm-blck-border'>
+                        <td>Light Pastel Blue</td>
+                        <td>#CCDDFF</td>
+                        <td>$light-past-blue</td>
+                    </tr>
+
+                    <tr class='bgc-light-past-gren fgc-blck sm-blck-border'>
+                        <td>Light Pastel Green</td>
+                        <td>#DDFFEE</td>
+                        <td>$light-past-gren</td>
+                    </tr>
+
+                    <tr class='bgc-light-past-yllw fgc-blck sm-blck-border'>
+                        <td>Light Pastel Yellow</td>
+                        <td>#FFFFDD</td>
+                        <td>$light-past-yllw</td>
+                    </tr>
+
+                    <tr class='bgc-light-past-orng fgc-blck sm-blck-border'>
+                        <td>Light Pastel Orange</td>
+                        <td>#FFEECC</td>
+                        <td>$light-past-orng</td>
+                    </tr>
+
+                    <tr class='bgc-dark-past-pink fgc-whte sm-blck-border'>
+                        <td>Dark Pastel Pink</td>
+                        <td>#CF80A8</td>
+                        <td>$dark-past-pink</td>
+                    </tr>
+
+                    <tr class='bgc-dark-past-prpl fgc-whte sm-blck-border'>
+                        <td>Dark Pastel Purple</td>
+                        <td>#B066CF</td>
+                        <td>$dark-past-prpl</td>
+                    </tr>
+
+                    <tr class='bgc-dark-past-blue fgc-whte sm-blck-border'>
+                        <td>Dark Pastel Blue</td>
+                        <td>#445599</td>
+                        <td>$dark-past-blue</td>
+                    </tr>
+
+                    <tr class='bgc-dark-past-gren fgc-whte sm-blck-border'>
+                        <td>Dark Pastel Green</td>
+                        <td>#80CF90</td>
+                        <td>$dark-past-gren</td>
+                    </tr>
+
+                    <tr class='bgc-dark-past-yllw fgc-whte sm-blck-border'>
+                        <td>Dark Pastel Yellow</td>
+                        <td>#CCCC66</td>
+                        <td>$dark-past-yllw</td>
+                    </tr>
+
+                    <tr class='bgc-dark-past-orng fgc-whte sm-blck-border'>
+                        <td>Dark Pastel Orange</td>
+                        <td>#A86846</td>
+                        <td>$dark-past-orng</td>
+                    </tr>
+
+                    <tr>
+                        <td><h2>Dark</h2></td>
+                        <td colspan='2'></td>
+                    </tr>
+
+                    <tr class='bgc-dark-blck fgc-whte sm-blck-border'>
+                        <td>Dark Black</td>
+                        <td>#151515</td>
+                        <td>$dark-blck</td>
+                    </tr>
+
+                    <tr class='bgc-mid-dark-blck fgc-whte sm-blck-border'>
+                        <td>Mid Dark Black</td>
+                        <td>#303030</td>
+                        <td>$mid-dark-blck</td>
+                    </tr>
+
+                    <tr class='bgc-light-dark-blck fgc-whte sm-blck-border'>
+                        <td>Light Dark Black</td>
+                        <td>#555555</td>
+                        <td>$light-dark-blck</td>
+                    </tr>
+
+                    <tr class='bgc-light-dark-grey fgc-whte sm-blck-border'>
+                        <td>Light Dark Grey</td>
+                        <td>#ABABBB</td>
+                        <td>$light-dark-grey</td>
+                    </tr>
+
+                    <tr class='bgc-mid-grey fgc-whte sm-blck-border'>
+                        <td>Mid Dark Grey</td>
+                        <td>#808080</td>
+                        <td>$mid-grey</td>
+                    </tr>
+
+                    <tr class='bgc-dark-grey fgc-whte sm-blck-border'>
+                        <td>Dark Grey</td>
+                        <td>#404040</td>
+                        <td>$dark-grey</td>
+                    </tr>
+
+                    <tr class='bgc-dark-red fgc-whte sm-blck-border'>
+                        <td>Dark Red</td>
+                        <td>#800000</td>
+                        <td>$dark-red</td>
+                    </tr>
+
+                    <tr class='bgc-mid-dark-red fgc-whte sm-blck-border'>
+                        <td>Mid Dark Red</td>
+                        <td>#BB0000</td>
+                        <td>$mid-dark-red</td>
+                    </tr>
+
+                    <tr class='bgc-light-dark-red fgc-whte sm-blck-border'>
+                        <td>Light Dark Red</td>
+                        <td>#FF3333</td>
+                        <td>$light-dark-red</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class='subsection'>
+            <h1>Color Classes</h1>
+
+            <p>
+                Each section of colour classes will begin with at least 
+                one example, that will then be followed by a list of all 
+                possible classes. Please refer to the colours above to 
+                see what something looks like.
+            </p>
+
+            <h2>Background Colours</h2>
+
+            <div class='board past-theme2'>
+                <table>
+                    <tr class='centralize'>
+                        <td class='centralize'>
+                            <div class='code-cont fgc-whte'>
+                                <pre>
+                                    <code>
+&lt;div class='bgc-def-brwn lg-box'&gt;
+
+&lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td class='centralize'>
+                            -
+                        </td>
+                        <td class='centralize'>
+                            <div class='bgc-def-brwn lg-box'>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class='fgc-dark-past-pink'>
+                <p>Background Color Classes:</p>
+               
+                <ul class='flex-row-wrap'>
+                    <li class='sm-grey-rnd-border'>bgc-def-brwn</li>
+                    <li class='sm-grey-rnd-border'>bgc-def-gold</li>
+                    <li class='sm-grey-rnd-border'>bgc-def-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-def-brwn</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-def-gold</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-def-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-def-brwn</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-def-gold</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-def-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-past-pink</li>
+                    <li class='sm-grey-rnd-border'>bgc-past-prpl</li>
+                    <li class='sm-grey-rnd-border'>bgc-past-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-past-gren</li>
+                    <li class='sm-grey-rnd-border'>bgc-past-yllw</li>
+                    <li class='sm-grey-rnd-border'>bgc-past-orng</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-past-pink</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-past-prpl</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-past-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-past-gren</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-past-yllw</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-past-orng</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-past-pink</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-past-prpl</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-past-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-past-gren</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-past-yllw</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-past-orng</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-blck</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-grey</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-red</li>
+                    <li class='sm-grey-rnd-border'>bgc-mid-dark-blck</li>
+                    <li class='sm-grey-rnd-border'>bgc-mid-dark-grey</li>
+                    <li class='sm-grey-rnd-border'>bgc-mid-dark-red</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-dark-blck</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-dark-grey</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-dark-red</li>
+                    <li class='sm-grey-rnd-border'>bgc-blck</li>
+                    <li class='sm-grey-rnd-border'>bgc-mid-grey</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-grey</li>
+                    <li class='sm-grey-rnd-border'>bgc-whte</li>
+                    <li class='sm-grey-rnd-border'>bgc-red</li>
+                    <li class='sm-grey-rnd-border'>bgc-yllw</li>
+                    <li class='sm-grey-rnd-border'>bgc-gren</li>
+                    <li class='sm-grey-rnd-border'>bgc-cyan</li>
+                    <li class='sm-grey-rnd-border'>bgc-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-mgnt</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-red</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-yllw</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-gren</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-cyan</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-light-mgnt</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-red</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-yllw</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-gren</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-cyan</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-blue</li>
+                    <li class='sm-grey-rnd-border'>bgc-dark-mgnt</li>
+                </ul>
+            </div>
+
+            <h2>Foreground Colours</h2>
+
+            <div class='board past-theme2'>
+                <table>
+                    <tr class='centralize'>
+                        <td class='centralize'>
+                            <div class='code-cont fgc-whte'>
+                                <pre>
+                                    <code>
+&lt;div class='fgc-blue bgc-whte lg-box'&gt;
+blue
+&lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td class='centralize'>
+                            -
+                        </td>
+                        <td class='centralize'>
+                            <div class='centralize fgc-blue bgc-whte lg-box'>
+                                blue
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class='fgc-dark-past-pink'>
+                <p>Foreground Color Classes:</p>
+               
+                <ul class='flex-row-wrap'>
+                    <li class='sm-grey-rnd-border'>fgc-def-brwn</li>
+                    <li class='sm-grey-rnd-border'>fgc-def-gold</li>
+                    <li class='sm-grey-rnd-border'>fgc-def-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-def-brwn</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-def-gold</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-def-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-def-brwn</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-def-gold</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-def-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-past-pink</li>
+                    <li class='sm-grey-rnd-border'>fgc-past-prpl</li>
+                    <li class='sm-grey-rnd-border'>fgc-past-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-past-gren</li>
+                    <li class='sm-grey-rnd-border'>fgc-past-yllw</li>
+                    <li class='sm-grey-rnd-border'>fgc-past-orng</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-past-pink</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-past-prpl</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-past-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-past-gren</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-past-yllw</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-past-orng</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-past-pink</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-past-prpl</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-past-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-past-gren</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-past-yllw</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-past-orng</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-blck</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-grey</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-red</li>
+                    <li class='sm-grey-rnd-border'>fgc-mid-dark-blck</li>
+                    <li class='sm-grey-rnd-border'>fgc-mid-dark-grey</li>
+                    <li class='sm-grey-rnd-border'>fgc-mid-dark-red</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-dark-blck</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-dark-grey</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-dark-red</li>
+                    <li class='sm-grey-rnd-border'>fgc-blck</li>
+                    <li class='sm-grey-rnd-border'>fgc-mid-grey</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-grey</li>
+                    <li class='sm-grey-rnd-border'>fgc-whte</li>
+                    <li class='sm-grey-rnd-border'>fgc-red</li>
+                    <li class='sm-grey-rnd-border'>fgc-yllw</li>
+                    <li class='sm-grey-rnd-border'>fgc-gren</li>
+                    <li class='sm-grey-rnd-border'>fgc-cyan</li>
+                    <li class='sm-grey-rnd-border'>fgc-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-mgnt</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-red</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-yllw</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-gren</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-cyan</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-light-mgnt</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-red</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-yllw</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-gren</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-cyan</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-blue</li>
+                    <li class='sm-grey-rnd-border'>fgc-dark-mgnt</li>
+                </ul>
+            </div>
+
+            <h2>Monochromatics</h2>
+
+            <div class='board past-theme2'>
+                <table>
+                    <tr class='centralize'>
+                        <td class='centralize'>
+                            <div class='code-cont fgc-whte'>
+                                <pre>
+                                    <code>
+&lt;div class='mc-red xlg-box'&gt;
+    Monochromatic Red
+&lt;/div&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </td>
+                        <td class='centralize'>
+                            -
+                        </td>
+                        <td class='centralize'>
+                            <div class='centralize mc-red xlg-box'>
+                                Monochromatic Red
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class='fgc-dark-past-pink'>
+                <p>Monochromatic Colour Classes:</p>
+
+                <ul>
+                    <li>mc-red</li>
+                    <li>mc-gren</li>
+                    <li>mc-blue</li>
+                    <li>mc-yllw</li>
+                    <li>mc-mgnt</li>
+                    <li>mc-cyan</li>
+                    <li>mc-dark-blck</li>
+                    <li>mc-dark-grey</li>
+                    <li>mc-dark-red</li>
+                    <li>mc-past-pink</li>
+                    <li>mc-past-prpl</li>
+                    <li>mc-past-blue</li>
+                    <li>mc-past-gren</li>
+                    <li>mc-past-yllw</li>
+                    <li>mc-past-orng</li>
+                    <li>mc-def-brwn</li>
+                    <li>mc-def-blue</li>
+                    <li>mc-def-gold</li>
+                </ul>
+            </div>
+
+            <h2>Themes</h2>
+
+            <div class='board past-theme2'>
+                <div class='flex-row-wrap'>
+                    <div class='sm-blck-border centralize lg-box def-theme1'>def-theme1</div>
+                    <div class='sm-blck-border centralize lg-box def-theme2'>def-theme2</div>
+                    <div class='sm-blck-border centralize lg-box past-theme1'>past-theme1</div>
+                    <div class='sm-blck-border centralize lg-box past-theme2'>past-theme2</div>
+                    <div class='sm-blck-border centralize lg-box past-theme3'>past-theme3</div>
+                    <div class='sm-blck-border centralize lg-box past-theme4'>past-theme4</div>
+                    <div class='sm-blck-border centralize lg-box dark-theme1'>dark-theme1</div>
+                    <div class='sm-blck-border centralize lg-box dark-theme2'>dark-theme2</div>
+                    <div class='sm-blck-border centralize lg-box dark-theme3'>dark-theme3</div>
+                </div>
+            </div>
+
+            <h2>Bodies</h2>
+
+            <p>The following class tags can be applied to bodies to result in the seen colour changes.</p>
+
+            <div class='flex-row-wrap'>
+                <div class='sm-blck-border centralize xlg-box def-brwn-body'>def-brwn-body</div>
+                <div class='sm-blck-border centralize xlg-box def-gold-body'>def-gold-body</div>
+                <div class='sm-blck-border centralize xlg-box def-blue-body'>def-blue-body</div>
+                <div class='sm-blck-border centralize xlg-box past-pink-body'>past-pink-body</div>
+                <div class='sm-blck-border centralize xlg-box past-prpl-body'>past-prpl-body</div>
+                <div class='sm-blck-border centralize xlg-box past-blue-body'>past-blue-body</div>
+                <div class='sm-blck-border centralize xlg-box past-gren-body'>past-gren-body</div>
+                <div class='sm-blck-border centralize xlg-box past-yllw-body'>past-yllw-body</div>
+                <div class='sm-blck-border centralize xlg-box past-orng-body'>past-orng-body</div>
+                <div class='sm-blck-border centralize xlg-box dark-blck-body'>dark-blck-body</div>
+                <div class='sm-blck-border centralize xlg-box dark-grey-body'>dark-grey-body</div>
+                <div class='sm-blck-border centralize xlg-box dark-red-body'>dark-red-body</div>
+            </div>
+
+        </div>
+
+        <div class='subsection'>
+            <h1>Borders</h1>
+
+            <h3>Sizes</h3>
+            <ul>
+                <li>Small (2px)</li>
+                <li>Medium (4px)</li>
+                <li>Large (8px)</li>
+            </ul>
+
+            <h3>Colours</h3>
+            <ul>
+                <li>Black (blck)</li>
+                <li>Grey (grey)</li>
+                <li>White (whte)</li>
+                <li>Red (red)</li>
+            </ul>
+
+            <h3>Styling</h3>
+            <ul>
+                <li>Rounded ({size}-{color}-rnd-border)</li>
+                <li>Unrounded ({size}-{color}-border)</li>
+            </ul>
+
+            <div class='flex-row-wrap'>
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-blck-border'></div>
+                    <p>lg-blck-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-blck-rnd-border'></div>
+                    <p>lg-blck-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-blck-border'></div>
+                    <p>md-blck-border</p>
+                </div>
+                
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-blck-rnd-border'></div>
+                    <p>md-blck-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-blck-border'></div>
+                    <p>sm-blck-border</p>
+                </div>
+                
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-blck-rnd-border'></div>
+                    <p>sm-blck-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-grey-border'></div>
+                    <p>lg-grey-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-grey-rnd-border'></div>
+                    <p>lg-grey-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-grey-border'></div>
+                    <p>md-grey-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-grey-rnd-border'></div>
+                    <p>md-grey-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-grey-border'></div>
+                    <p>sm-grey-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-grey-rnd-border'></div>
+                    <p>sm-grey-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-whte-border'></div>
+                    <p>lg-whte-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-whte-rnd-border'></div>
+                    <p>lg-whte-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-whte-border'></div>
+                    <p>md-whte-border</p>
+                </div>
+                
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-whte-rnd-border'></div>
+                    <p>md-whte-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-whte-border'></div>
+                    <p>sm-whte-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-whte-rnd-border'></div>
+                    <p>sm-whte-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-red-border'></div>
+                    <p>lg-red-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box lg-red-border'></div>
+                    <p>lg-red-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-red-border'></div>
+                    <p>md-red-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box md-red-rnd-border'></div>
+                    <p>md-red-rnd-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-red-border'></div>
+                    <p>sm-red-border</p>
+                </div>
+
+                <div class='fit-cont flex-col centralize'>
+                    <div class='lg-box sm-red-rnd-border'></div>
+                    <p>sm-red-rnd-border</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>

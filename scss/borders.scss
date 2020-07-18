@@ -1,0 +1,139 @@
+@import 'colors';
+
+$lg: 8px;
+$md: ($lg / 2);
+$sm: ($md / 2);
+
+@mixin border($width, $color, $br: 0px, $style: solid) {
+    border: $width $style $color;
+    border-radius: $br;
+}
+
+/*****
+Sized
+*****/
+
+/* #region Sized */
+
+/* #region Unrounded */
+
+/* #region Black */
+.sm-blck-border {
+    @include border($sm, $blck);
+}
+
+.md-blck-border {
+    @include border($md, $blck);
+}
+
+.lg-blck-border {
+    @include border($lg, $blck);
+}
+/* #endregion */
+
+/* #region Grey */
+.sm-grey-border {
+    @include border($sm, $mid-grey);
+}
+
+.md-grey-border {
+    @include border($md, $mid-grey);
+}
+
+.lg-grey-border {
+    @include border($lg, $mid-grey);
+}
+/* #endregion */
+
+/* #region White */
+.sm-whte-border {
+    @include border($sm, $whte);
+}
+
+.md-whte-border {
+    @include border($md, $whte);
+}
+
+.lg-whte-border {
+    @include border($lg, $whte);
+}
+/* #endregion */
+
+/* #region Red */
+.sm-red-border {
+    @include border($sm, $red);
+}
+
+.md-red-border {
+    @include border($md, $red);
+}
+
+.lg-red-border {
+    @include border($lg, $red);
+}
+/* #endregion */
+
+/* #endregion */
+
+
+/* #region Rounded */
+
+/* #region Black */
+.sm-blck-rnd-border {
+    @include border($sm, $blck, 15px);
+}
+
+.md-blck-rnd-border {
+    @include border($md, $blck, 15px);
+}
+
+.lg-blck-rnd-border {
+    @include border($lg, $blck, 15px);
+}
+/* #endregion */
+
+/* #region Grey */
+.sm-grey-rnd-border {
+    @include border($sm, $mid-grey, 15px);
+}
+
+.md-grey-rnd-border {
+    @include border($md, $mid-grey, 15px);
+}
+
+.lg-grey-rnd-border {
+    @include border($lg, $mid-grey, 15px);
+}
+/* #endregion */
+
+/* #region White */
+.sm-whte-rnd-border {
+    @include border($sm, $whte, 15px);
+}
+
+.md-whte-rnd-border {
+    @include border($md, $whte, 15px);
+}
+
+.lg-whte-rnd-border {
+    @include border($lg, $whte, 15px);
+}
+/* #endregion */
+
+/* #region Red */
+.sm-red-rnd-border {
+    @include border($sm, $red, 15px);
+}
+
+.md-red-rnd-border {
+    @include border($md, $red, 15px);
+}
+
+.lg-red-rnd-border {
+    @include border($lg, $red, 15px);
+}
+/* #endregion */
+
+/* #endregion */
+
+/* #endregion */
